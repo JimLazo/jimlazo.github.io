@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jimmy Lazo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>I am Jimmy Lazo</strong>, electrical engineer, <br />
+						embedded programmer,<br />
+						and sometimes graphic designer.<br />
+						<strong>BS in Electrical Engineering</strong><br />
+						</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Popsicle Stick Bridge Competition - 2021<br />
+                            Semi-automated bridge stress tester.</h2>
+						</header>
+						<p><a href="https://gitlab.com/RoboKong/popsicle-stick-bridge-competition" alt="Gitlab Link">Gitlab Link to source code.</a><br />
+                            My team built a combination linear actuator, motor driver, HX711 load cell and Raspberry Pi 3+ on a table to break popsicle stick bridges and record the strength at break point. HX711 load cell needed manual calibration for each individual load cell. Reading the load cell while actuating the linear actuator and displaying the weight required making a background process in a seperate thread so that the UI would not break.<br />
+                            500+ Popsicle stick bridges were built and designed by Fort Bend ISD elementary school students within guidelines set by our team. Previous manual bridge testing took 2 days, and over 100 volunteers for over 200 bridges. Two of these semi-automated tables destroyed and recorded over 500 bridges with less than 20 volunteers in 6 hours.<br />
+                        </p>
+                        <img src="images/fulls/popbridge2.jpg" alt="" />
+						<img src="images/fulls/popbridge3.jpg" alt="" />
+						The script was written in Python 3 with a PyQT5 UI frontend and SQLite backend to store scores of bridges tested. Testing requires manually starting with UI, script then captures weight on bridge, displays weight and automatically stops at breakpoint. The final weight is displayed and can be manually stored with the team name in seperate part of UI.
+						<img src="images/fulls/popbridgeui.jpg" alt="" />
+						<!-- <ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul> -->
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+
+						<ul class="actions">
+							<li><a href="index.html" class="button">Full Portfolio</a></li>
+						</ul>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/jimmylazo/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li> 
+						<li><a href="https://github.com/JimLazo" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+						<li><a href="mailto:astrojlazo@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>
+							Design: <a href="http://html5up.net">HTML5 UP</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
